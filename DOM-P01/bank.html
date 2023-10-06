@@ -8,10 +8,60 @@
     <script src="https://cdn.tailwindcss.com"></script>    
 </head>
 <body>
+    <!-- Header Area -->
     <header>
         <h1 class="text-5xl font-medium text-violet-700 text-center mt-8">Bank Account of
             <span class="font-bold text-cyan-500 hover:text-red-500 transition duration-300 ease-in-out">Hasnat Shahriyar</span>
         </h1>
     </header>
+    <!-- Header Area Ends -->
+
+    <!-- Display Area -->
+    <section class="mt-12">
+        <!-- Deposit -->
+        <div class="grid grid-cols-3 w-8/12 mx-auto">
+            <div class="bg-emerald-400 text-center text-white font-medium p-8 mr-7">
+                <h4 class="text-2xl">Deposit</h4>
+                <h2 class="text-5xl">$00</h2>
+            </div>
+            <!-- Withdraw -->
+            <div class="bg-rose-400 text-center text-white font-medium p-8 mr-7">
+                <h4 class="text-2xl">Withdraw</h4>
+                <h2 class="text-5xl">$00</h2>
+            </div>
+            <!-- Balance -->
+            <div class="bg-violet-400 text-center text-white font-medium p-8">
+                <h4 class="text-2xl">Balance</h4>
+                <h2 class="text-5xl">$00</h2>
+            </div>
+        </div>
+    </section>
+    <!-- Display Area Ends -->
+
+    <!-- Deposit And Withdraw Input Area -->
+    <section class="mt-12">
+        <div class="grid grid-cols-2 w-8/12 mx-auto">
+            <div class="bg-emerald-600 text-center font-medium p-8 mr-7">
+                <h4 class="text-2xl text-white">Enter Your Deposit Amount</h4>
+                <div class="text-center">
+                    <input class="w-9/12 outline-none p-3 block mx-auto mt-5" type="email" name="" id="deposit" placeholder="Your Deposit Amount">
+                    <button id="submit-btn" class="text-white mt-5 bg-red-400 w-28 p-2 rounded hover:bg-red-600 transition duration-300 ease-in-out">Deposit</button>
+                </div>
+            </div>
+            <!-- Withdraw -->
+            <div class="bg-rose-600 text-center font-medium p-8 mr-7">
+                <h4 class="text-2xl text-white">Enter Your Withdraw Amount</h4>
+                <div class="text-center">
+                    <input class="w-9/12 outline-none p-3 block mx-auto mt-5" type="email" name="" id="withdraw" placeholder="Your Withdraw Amount">
+                    <button id="submit-btn" class="text-white mt-5 bg-emerald-500 w-28 p-2 rounded hover:bg-emerald-600 transition duration-300 ease-in-out">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Deposit And Withdraw Input Area Ends -->
+
+    <!-- JS Script -->
+    <script src="JS/bank.js">s</script>
+    <!-- Script -->
 </body>
 </html>
