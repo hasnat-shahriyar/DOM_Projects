@@ -1,6 +1,6 @@
 // Function to update the input number based on whether toIncrease is true or false
 function updateInputNumber(toIncrease) {
-    // Get the input field element with the id "case-input-field"
+    // Get the input field element with the id "input-field1"
     const caseInputField = document.getElementById("input-field1");
 
     // Get the current value of the input field as a string
@@ -38,6 +38,7 @@ document.getElementById("btn-plus1").addEventListener("click", function() {
     // Call the updateInputNumber function with true to increase the input value
     const newCaseInput = updateInputNumber(true);
     updateInputTotalNumber(newCaseInput);
+    calculateSubTotal();
 });
 
 // Get the button element with the id "btn-minus"
@@ -45,4 +46,5 @@ document.getElementById("btn-minus1").addEventListener("click", function() {
     // Call the updateInputNumber function with false to decrease the input value
     const newCaseInput = updateInputNumber(false);
     updateInputTotalNumber(newCaseInput);
+    calculateSubTotal();
 });

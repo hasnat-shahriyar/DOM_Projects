@@ -25,10 +25,12 @@ function updateInputTotalPrice(newNumberInput) {
 document.getElementById("case-btn-plus").addEventListener("click", function () {
     const newNumberInput = updateInputNumbers(true);
     updateInputTotalPrice(newNumberInput);
+    calculateSubTotal();
 });
 
 // Add an event listener to the "case-btn-minus" button
 document.getElementById("case-btn-minus").addEventListener("click", function () {
     const newNumberInput = updateInputNumbers(false);
     updateInputTotalPrice(newNumberInput);
+    calculateSubTotal ();
 });
